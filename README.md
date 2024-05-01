@@ -1,3 +1,5 @@
 # Moonshine Antigua Brochure site
 
-Brochire website for holiday property client built in Astro
+By Bryn Ellison
+
+Brochure website for holiday property client, built in Astro.
