@@ -4,8 +4,19 @@ import Hamburger from "./Hamburger.astro";
 ---
 
 <header>
-  <nav>
-    <Hamburger />
-    <Navigation />
-  </nav>
+  <div class="container">
+    <div class="row" id="header-row">
+      <div class="four columns">
+        <div class="logo-container">
+          <h1 id="logo">MOONSHINE</h1>
+        </div>
+      </div>
+      <div class="eight columns">
+        <nav>
+          <Hamburger />
+          <Navigation />
+        </nav>
+      </div>
+    </div>
+  </div>
 </header>
