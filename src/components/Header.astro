@@ -1,6 +1,8 @@
 ---
 import Navigation from "./Navigation.astro";
 import Hamburger from "./Hamburger.astro";
+import { Image } from "astro:assets";
+import logo from "../../src/images/logo.png";
 ---
 
 <header>
@@ -8,7 +10,7 @@ import Hamburger from "./Hamburger.astro";
     <div class="row" id="header-row">
       <div class="four columns">
         <div class="logo-container">
-          <h1 id="logo">MOONSHINE</h1>
+          <Image src={logo} width="230" alt="Moonshine" />
         </div>
       </div>
       <div class="eight columns">

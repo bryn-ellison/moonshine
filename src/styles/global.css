@@ -69,7 +69,7 @@ html {
     width: 40px;
     height: 5px;
     margin-bottom: 10px;
-    background-color: #5D9AC8;
+    background-color: #84BAB6;
 
   }
 
@@ -114,7 +114,7 @@ html {
   
   .nav-links a:hover,
   .nav-links a:focus {
-    background-color: #5D9AC8;
+    background-color: #84BAB6;
     color: white;
   }
   
