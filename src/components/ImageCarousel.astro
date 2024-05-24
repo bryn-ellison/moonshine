@@ -1,0 +1,48 @@
+---
+import { Image } from "astro:assets";
+import poolArea from "../images/poolarea5.jpg";
+import diningArea from "../images/diningarea.jpg";
+import bedroom from "../images/bedroom1.jpg";
+import poolArea2 from "../images/poolarea7.jpg";
+import bathroom from "../images/bathroom2.jpg";
+---
+
+<div
+  class="carousel carousel-center max-w-md p-4 space-x-4 bg-neutral rounded-box"
+>
+  <div class="carousel-item">
+    <Image
+      src={poolArea}
+      alt="Two sun loungers by pool facing blue sea with champagne bottle on table."
+      width={600}
+    />
+  </div>
+  <div class="carousel-item">
+    <Image
+      src={diningArea}
+      alt="Dining area with table for eight looking out on to bay."
+      width={600}
+    />
+  </div>
+  <div class="carousel-item">
+    <Image
+      src={bedroom}
+      alt="Bedroom with kingsized bed looking out to bay through large glass doors."
+      width={600}
+    />
+  </div>
+  <div class="carousel-item">
+    <Image
+      src={poolArea2}
+      alt="View of rear of property showing pool area and stairs up to two balcony areas and main living space."
+      width={600}
+    />
+  </div>
+  <div class="carousel-item">
+    <Image
+      src={bathroom}
+      alt="View of typical ensuite bathroom showing double sink and mirror unit."
+      width={600}
+    />
+  </div>
+</div>

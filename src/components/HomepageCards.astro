@@ -1,0 +1,101 @@
+---
+import { Image } from "astro:assets";
+import poolArea from "../images/poolarea5.jpg";
+import diningArea from "../images/diningarea.jpg";
+import livingArea from "../images/livingarea2.jpg";
+import bedroom from "../images/bedroom1.jpg";
+import poolArea2 from "../images/poolarea7.jpg";
+import bathroom from "../images/bathroom2.jpg";
+---
+
+<div class="py-6 bg-gradient-to-r from-neutral-100 to-stone-200">
+  <div class="mx-auto max-w-6xl grid-cols-1 sm:grid md:grid-cols-2">
+    <div
+      class="mx-3 mt-6 flex flex-col self-start rounded-lg shadow-xl bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0"
+    >
+      <a href="/gallery">
+        <Image
+          class="rounded-t-lg"
+          src={poolArea2}
+          alt="View of rear of property showing pool area and stairs up to two balcony areas and main living space."
+        />
+
+        <div class="p-6">
+          <h5 class="mb-2 text-2xl font-semibold leading-tight text-slate-900">
+            Take a look around...
+          </h5>
+          <p class="mb-4 text-lg leading-8 text-slate-700">
+            Moonshine is a stunning propery set in beautiful grounds. Go here to
+            see for yourself.
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="mx-3 mt-6 flex flex-col self-start rounded-lg shadow-xl bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0"
+    >
+      <a href="/about">
+        <Image
+          class="rounded-t-lg"
+          src={livingArea}
+          alt="Dining area with table for eight looking out on to bay."
+        />
+
+        <div class="p-6">
+          <h5 class="mb-2 text-2xl font-semibold leading-tight text-slate-900">
+            About Moonshine
+          </h5>
+          <p class="mb-4 text-lg leading-8 text-slate-700">
+            Moonshine has all you need to enjoy the holiday of a lifetime. Find
+            out more about the property here.
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="mx-3 mt-6 flex flex-col self-start rounded-lg shadow-xl bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0"
+    >
+      <a href="/stay">
+        <Image
+          class="rounded-t-lg"
+          src={bedroom}
+          alt="Bedroom with kingsized bed looking out to bay through large glass doors."
+        />
+
+        <div class="p-6">
+          <h5 class="mb-2 text-2xl font-semibold leading-tight text-slate-900">
+            Your stay
+          </h5>
+          <p class="mb-4 text-lg leading-8 text-slate-700">
+            Find out more about the area around Moonshine and what there is to
+            do when you're not relaxing!
+          </p>
+        </div>
+      </a>
+    </div>
+
+    <div
+      class="mx-3 mt-6 flex flex-col self-start rounded-lg shadow-xl bg-white text-surface shadow-secondary-1 dark:bg-surface-dark dark:text-white sm:shrink-0 sm:grow sm:basis-0"
+    >
+      <a href="/booking">
+        <Image
+          class="rounded-t-lg"
+          src={poolArea}
+          alt="Dining area with table for eight looking out on to bay."
+        />
+
+        <div class="p-6">
+          <h5 class="mb-2 text-2xl font-semibold leading-tight text-slate-900">
+            Booking your stay
+          </h5>
+          <p class="mb-4 text-lg leading-8 text-slate-700">
+            Fallen in love with Moonshine? Get our contact and booking
+            information here.
+          </p>
+        </div>
+      </a>
+    </div>
+  </div>
+</div>
