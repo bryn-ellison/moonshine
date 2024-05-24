@@ -11,6 +11,7 @@ export default {
     extend: {
       backgroundImage: {
         "hero-image": "url('/src/images/poolarea6.jpg')",
+        "homepage-image": "url('/src/images/beach.jpg')",
       },
     },
   },
