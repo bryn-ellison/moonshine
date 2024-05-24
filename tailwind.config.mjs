@@ -5,7 +5,8 @@ export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
   theme: {
     fontFamily: {
-      serif: ["Cinzel Decorative", ...defaultTheme.fontFamily.sans],
+      sans: ["DM Sans Variable", ...defaultTheme.fontFamily.sans],
+      serif: ["Cinzel Decorative", ...defaultTheme.fontFamily.serif],
     },
     extend: {
       backgroundImage: {
