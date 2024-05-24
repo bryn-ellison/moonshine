@@ -3,11 +3,13 @@ const { pageTitle, pageDescription } = Astro.props;
 ---
 
 <div
-  class="relative isolate overflow-hidden pb-24 pt-40 lg:px-8 bg-hero-image bg-cover"
+  class="relative isolate overflow-hidden pb-12 pt-40 lg:px-8 bg-hero-image bg-cover"
 >
   <div class="mx-auto max-w-6xl px-6 lg:px-8">
-    <div class="mx-auto max-w-2xl lg:mx-0 text-white">
-      <h2 class="text-4xl sm:text-6xl font-serif font-bold tracking-tight">
+    <div class="mx-auto max-w-lg lg:mx-0 text-white">
+      <h2
+        class="pt-20 text-4xl max-w-xs lg:max-w-md sm:text-6xl font-serif font-bold tracking-tight"
+      >
         {pageTitle}
       </h2>
       <p class="mt-6 text-lg leading-8">
