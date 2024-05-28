@@ -12,6 +12,7 @@ export default {
       backgroundImage: {
         "hero-image": "url('/src/images/poolarea6.jpg')",
         "homepage-image": "url('/src/images/beach.jpg')",
+        "mobile-menu-bg": "url('/src/images/media/mobileMenuBg.png')",
       },
     },
   },
