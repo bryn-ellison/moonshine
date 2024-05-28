@@ -12,14 +12,14 @@ const pageTitle = "Homepage";
 
 <BaseLayout pageTitle={pageTitle}>
   <Hero />
-  <HomepageIntro />
+  <HomepageIntro data-aos="fade" />
 
   <div
     class="h-96 relative isolate px-6 pt-14 lg:px-8 bg-homepage-image bg-cover bg bg-center"
   >
   </div>
 
-  <div class="relative isolate overflow-hidden py-10 lg:py-12">
+  <div class="relative isolate overflow-hidden py-10 lg:py-12" data-aos="fade">
     <div class="mx-auto max-w-6xl px-6">
       <div class="mx-auto max-w-2xl lg:mx-0">
         <h2
@@ -34,5 +34,5 @@ const pageTitle = "Homepage";
       </div>
     </div>
   </div>
-  <HomepageCards />
+  <HomepageCards data-aos="fade" />
 </BaseLayout>

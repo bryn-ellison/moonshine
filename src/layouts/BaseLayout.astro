@@ -1,6 +1,7 @@
 ---
 const { pageTitle } = Astro.props;
 import { ViewTransitions } from "astro:transitions";
+import "aos/dist/aos.css";
 import "../styles/global.css";
 import "@fontsource/cinzel-decorative";
 import "@fontsource-variable/dm-sans";
@@ -20,6 +21,11 @@ import Footer from "../components/Footer.astro";
   <body>
     <Header />
     <slot />
-    <Footer />
+    <Footer data-aos="fade-up" />
+    <script>
+      import { aosInit } from "../js/aos.js";
+      aosInit();
+      document.addEventListener("astro:after-swap", aosInit);
+    </script>
   </body>
 </html>

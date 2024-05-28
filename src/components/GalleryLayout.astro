@@ -14,6 +14,7 @@ const sortedImages = images.sort(() => Math.random() - 0.5);
       sortedImages.map((image) => (
         <a href={image.src}>
           <Image
+            data-aos="fade"
             src={image}
             alt={`Image of Moonshine property, Antigua`}
             quality={50}
