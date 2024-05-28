@@ -123,36 +123,38 @@
 </header>
 
 <script>
-  document.querySelector("#menu-btn").addEventListener("click", () => {
-    console.log("CLICK");
-    document.getElementById("mobile-menu").classList.remove("hidden");
-  });
+  document.addEventListener("astro:page-load", () => {
+    document.querySelector("#menu-btn").addEventListener("click", () => {
+      console.log("CLICK");
+      document.getElementById("mobile-menu").classList.remove("hidden");
+    });
 
-  document.querySelector("#close-menu-btn").addEventListener("click", () => {
-    console.log("CLICK");
-    document.getElementById("mobile-menu").classList.add("hidden");
-  });
+    document.querySelector("#close-menu-btn").addEventListener("click", () => {
+      console.log("CLICK");
+      document.getElementById("mobile-menu").classList.add("hidden");
+    });
 
-  const title = document.title;
-  const navbar = document.querySelector("nav");
-  if (title === "Homepage") {
-    window.onscroll = () => {
-      if (window.scrollY > 460) {
-        navbar.classList.remove("text-white");
-        navbar.classList.add("text-slate-900");
-        navbar.classList.add("bg-white");
-        navbar.classList.add("ease-in");
-        navbar.classList.add("duration-300");
-      } else {
-        navbar.classList.remove("bg-white");
-        navbar.classList.add("text-white");
-        navbar.classList.remove("text-slate-900");
-      }
-    };
-  } else {
-    navbar.classList.remove("text-white");
-    navbar.classList.add("bg-white");
-    navbar.classList.add("text-slate-900");
-    navbar.classList.add("h-20");
-  }
+    const title = document.title;
+    const navbar = document.querySelector("nav");
+    if (title === "Homepage") {
+      window.onscroll = () => {
+        if (window.scrollY > 460) {
+          navbar.classList.remove("text-white");
+          navbar.classList.add("text-slate-900");
+          navbar.classList.add("bg-white");
+          navbar.classList.add("ease-in");
+          navbar.classList.add("duration-300");
+        } else {
+          navbar.classList.remove("bg-white");
+          navbar.classList.add("text-white");
+          navbar.classList.remove("text-slate-900");
+        }
+      };
+    } else {
+      navbar.classList.remove("text-white");
+      navbar.classList.add("bg-white");
+      navbar.classList.add("text-slate-900");
+      navbar.classList.add("h-20");
+    }
+  });
 </script>
