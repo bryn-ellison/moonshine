@@ -1,9 +1,11 @@
 ---
-const { pageTitle, pageDescription } = Astro.props;
+const { pageTitle, pageDescription, pageImage } = Astro.props;
 ---
 
 <div
-  class="relative isolate overflow-hidden pt-40 bg-hero-image bg-cover h-auto"
+  id="page-header"
+  class="relative isolate overflow-hidden pt-40 bg-cover lg:bg-center"
+  title={pageImage}
 >
   <div
     class="h-full w-full p-0 m-0 bg-gradient-to-t from-slate-700 to-transparent"
@@ -22,3 +24,10 @@ const { pageTitle, pageDescription } = Astro.props;
     </div>
   </div>
 </div>
+
+<script>
+  document.addEventListener("astro:page-load", () => {
+    const header = document.getElementById("page-header");
+    header.classList.add(header.title);
+  });
+</script>

@@ -6,13 +6,14 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 
 const pageTitle = "Have a look around...";
 const pageDescription = "Take the virtual Moonshine tour before your visit";
+const pageImage = "bg-homepage-image";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
   <ContentPageHeader
     pageTitle={pageTitle}
     pageDescription={pageDescription}
-    <GalleryLayout
+    pageImage={pageImage}
   />
   <div class="relative isolate overflow-hidden py-10" data-aos="fade">
     <div class="mx-auto max-w-6xl px-6">

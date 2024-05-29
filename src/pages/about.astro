@@ -3,7 +3,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import ContentPageHeader from "../components/ContentPageHeader.astro";
 
 const pageTitle = "About Moonshine";
-const pageDescription = "Find out what the property has to ";
+const pageDescription = "Find out what the property has to offer";
+const pageImage = "bg-hero-image";
 
 import { Image } from "astro:assets";
 import poolArea from "../images/poolarea.jpg";
@@ -11,7 +12,11 @@ import kitchen from "../images/kitchen.jpg";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <ContentPageHeader pageTitle={pageTitle} pageDescription={pageDescription} />
+  <ContentPageHeader
+    pageTitle={pageTitle}
+    pageDescription={pageDescription}
+    pageImage={pageImage}
+  />
   <div class="overflow-hidden py-16 sm:py-24" data-aos="fade">
     <div class="mx-auto max-w-6xl px-6 lg:px-8">
       <div
