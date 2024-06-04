@@ -13,6 +13,7 @@ export default {
         "hero-image": "url('/src/images/poolarea6.jpg')",
         "homepage-image": "url('/src/images/beach.jpg')",
         "mobile-menu-bg": "url('/src/images/media/mobileMenuBg.jpg')",
+        "homepage-video": "url('https://youtu.be/94YPSdHHkDc')",
       },
     },
   },
