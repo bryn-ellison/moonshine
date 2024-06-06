@@ -6,22 +6,24 @@ import viewFromBalcony from "../images/viewfrombalcony.jpg";
 
 const pageTitle = "Your stay at Moonshine";
 const pageDescription = "Rest or recreation? At Moonshine you can have it all.";
+const pageImage = "bg-hero-image";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <ContentPageHeader pageTitle={pageTitle} pageDescription={pageDescription} />
+  <ContentPageHeader
+    pageTitle={pageTitle}
+    pageDescription={pageDescription}
+    pageImage={pageImage}
+  />
   <div class="overflow-hidden py-16 sm:py-24" data-aos="fade">
-    <div class="mx-auto max-w-6xl px-6 lg:px-8">
+    <div class="mx-auto max-w-6xl">
       <div
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
       >
-        <div class="lg:pr-8">
+        <div class="px-6 lg:pr-8">
           <div class="lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7 text-emerald-600">
-              See it all, or not.
-            </h2>
             <p
-              class="mt-2 text-slate-900 text-3xl font-bold font-serif tracking-tight sm:text-4xl"
+              class="mt-2 text-slate-900 text-2xl font-bold font-serif tracking-tight sm:text-4xl"
             >
               Local knowledge.
             </p>
@@ -99,8 +101,8 @@ const pageDescription = "Rest or recreation? At Moonshine you can have it all.";
         </div>
         <Image
           src={viewFromBalcony}
-          alt="Love sign by poolside"
-          class="w-[48rem] md:mt-10 max-w-none rounded-xl shadow-xl ring-1 ring-slate-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+          alt="View of Willoughby bay from a Moonshine bedroom terrace area"
+          class="w-full md:w-[48rem] max-w-none md:rounded-xl shadow-xl md:-ml-4 lg:-ml-0"
         />
       </div>
     </div>

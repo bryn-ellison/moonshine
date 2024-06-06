@@ -5,134 +5,218 @@ import ContentPageHeader from "../components/ContentPageHeader.astro";
 const pageTitle = "Booking your stay";
 const pageDescription =
   "Already fallen in love? Get in touch and we'll make your dreams a reality.";
+const pageImage = "bg-hero-image";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-  <ContentPageHeader pageTitle={pageTitle} pageDescription={pageDescription} />
+  <ContentPageHeader
+    pageTitle={pageTitle}
+    pageDescription={pageDescription}
+    pageImage={pageImage}
+  />
 
-  <div class="isolate bg-white px-6 py-16 sm:py-24 lg:px-8" data-aos="fade">
-    <div class="mx-auto max-w-2xl text-center">
-      <h2
-        class="text-3xl font-bold font-serif tracking-tight text-gray-900 sm:text-4xl"
+  <div class="overflow-hidden py-16 sm:py-24" data-aos="fade">
+    <div class="mx-auto max-w-6xl">
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
       >
-        Contact Us
-      </h2>
-      <p class="mt-2 text-lg leading-8 text-gray-600">
-        Use this form to ask any questions or find out Moonshine's availabiltiy,
-        please rememember to include the dates you're interested in.
-      </p>
-    </div>
-    <form action="#" method="POST" class="mx-auto mt-16 max-w-xl sm:mt-20">
-      <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-        <div>
-          <label
-            for="first-name"
-            class="block text-sm font-semibold leading-6 text-gray-900"
-            >First name</label
-          >
-          <div class="mt-2.5">
-            <input
-              type="text"
-              name="first-name"
-              id="first-name"
-              autocomplete="given-name"
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-            />
+        <div class="px-6">
+          <div class="lg:max-w-lg">
+            <h2
+              class="text-slate-900 text-2xl font-bold font-serif tracking-tight sm:text-4xl"
+            >
+              Rates and Availability
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              Moonshine's rates are seasonally based and dependent on events
+              taking place in Antigua.
+            </p>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              All prices are in USD.
+            </p>
+            <dl
+              class="mt-10 max-w-xl space-y-8 text-base leading-7 text-gray-600 lg:max-w-none"
+            >
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-gray-900">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5rem"
+                    height="1.5rem"
+                    viewBox="0 0 512 512"
+                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    ><path
+                      fill="currentColor"
+                      d="M432 230.7a79.4 79.4 0 0 0-32-6.7H112a79.5 79.5 0 0 0-32 6.69A80.09 80.09 0 0 0 32 304v112a16 16 0 0 0 32 0v-8a8.1 8.1 0 0 1 8-8h368a8.1 8.1 0 0 1 8 8v8a16 16 0 0 0 32 0V304a80.09 80.09 0 0 0-48-73.3M376 80H136a56 56 0 0 0-56 56v72a4 4 0 0 0 5.11 3.84A95.5 95.5 0 0 1 112 208h4.23a4 4 0 0 0 4-3.55A32 32 0 0 1 152 176h56a32 32 0 0 1 31.8 28.45a4 4 0 0 0 4 3.55h24.46a4 4 0 0 0 4-3.55A32 32 0 0 1 304 176h56a32 32 0 0 1 31.8 28.45a4 4 0 0 0 4 3.55h4.2a95.5 95.5 0 0 1 26.89 3.85A4 4 0 0 0 432 208v-72a56 56 0 0 0-56-56"
+                    ></path></svg
+                  >
+                   High Season (November 1st - May 14th):
+                </dt>
+                <dd class="inline">$1000 per night</dd>
+              </div>
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-gray-900">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5rem"
+                    height="1.5rem"
+                    viewBox="0 0 16 16"
+                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    ><path
+                      fill="currentColor"
+                      d="M6.723 1.054a.5.5 0 0 1 .265.335C7.006 1.468 7.5 3.582 7.5 5c0 .95-.442 1.797-1.13 2.346c-.25.2-.37.418-.37.6v.486q0 .035.004.066c.034.248.157 1.169.272 2.124c.113.937.224 1.959.224 2.378a2 2 0 1 1-4 0c0-.42.111-1.44.224-2.378c.115-.955.238-1.876.272-2.124L3 8.432v-.486c0-.182-.12-.4-.37-.6A3 3 0 0 1 1.5 5c0-1.413.49-3.516.512-3.61A.505.505 0 0 1 2.505 1c.28 0 .507.227.507.507v2.998A.495.495 0 1 0 4 4.5v-3a.5.5 0 0 1 1 0v3.026a.495.495 0 0 0 .99-.021v-3c0-.279.226-.505.506-.505c.022 0 .12 0 .227.054M9 5.5A4.5 4.5 0 0 1 13.5 1a.5.5 0 0 1 .5.5v5.973l.019.177a262 262 0 0 1 .229 2.24c.123 1.256.252 2.664.252 3.11a2 2 0 1 1-4 0c0-.446.129-1.854.252-3.11c.063-.637.126-1.247.173-1.699l.02-.191H10a1 1 0 0 1-1-1z"
+                    ></path></svg
+                  >
+                   Low Season (May 15th - October 31st):
+                </dt>
+                <dd class="inline">$800 per night</dd>
+              </div>
+              <div class="relative pl-9">
+                <dt class="inline font-semibold text-gray-900">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="1.5rem"
+                    height="1.5rem"
+                    viewBox="0 0 14 14"
+                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    ><path
+                      fill="currentColor"
+                      fill-rule="evenodd"
+                      d="M7.34 3.291a2.241 2.241 0 0 0-1.287.912a.75.75 0 1 1-1.24-.843a3.75 3.75 0 0 1 2.681-1.62a1.83 1.83 0 0 0-1.236-.193a.75.75 0 0 1-.29-1.471a3.33 3.33 0 0 1 3.52 1.588a3.53 3.53 0 0 1 3.825.908a.75.75 0 1 1-1.1 1.02a2.03 2.03 0 0 0-1.285-.641h-.006a3.3 3.3 0 0 1 .805 2.915a.75.75 0 1 1-1.468-.308a1.8 1.8 0 0 0-1.069-2.03c-.427.291-.786.769-1.059 1.43c-.272.658-.44 1.459-.504 2.332a5.595 5.595 0 0 1 1.58.678c.775.48 1.46 1.15 2.024 1.96a1.506 1.506 0 0 0-.908.643c-.086.138-.175.25-.262.339a1.012 1.012 0 0 1-1.416 0a1.986 1.986 0 0 1-.224-.28c-.387-.576-1.056-.701-1.452-.701c-.396 0-1.065.125-1.452.701a2.03 2.03 0 0 1-.224.28a1.012 1.012 0 0 1-1.416 0a2.064 2.064 0 0 1-.263-.339c-.37-.587-1.033-.71-1.412-.71c-.206 0-.49.036-.769.16c.576-.853 1.284-1.554 2.087-2.053a5.403 5.403 0 0 1 2.615-.831c.075-.978.269-1.926.61-2.752a5.55 5.55 0 0 1 .595-1.094M2.89 11.49a.75.75 0 0 0-1.382.007a1.491 1.491 0 0 1-.951.857a.75.75 0 1 0 .427 1.438a2.99 2.99 0 0 0 1.216-.707c.173.169.366.318.576.444c1.047.628 2.571.628 3.618 0a3.12 3.12 0 0 0 .575-.443c.173.168.365.317.575.443c1.047.628 2.571.628 3.618 0c.21-.126.403-.275.576-.444l.067.063c.33.297.723.517 1.149.643a.75.75 0 0 0 .427-1.437a1.491 1.491 0 0 1-.951-.857a.75.75 0 0 0-1.382-.007a1.625 1.625 0 0 1-.658.753c-.572.343-1.503.343-2.074 0a1.624 1.624 0 0 1-.658-.753a.75.75 0 0 0-1.378 0a1.624 1.624 0 0 1-.658.753c-.572.343-1.503.343-2.075 0a1.624 1.624 0 0 1-.657-.753"
+                      clip-rule="evenodd"></path></svg
+                  >
+                   Peak Weeks (Yacht Charter Show, Christmas & New Years Season,
+                  RORC, SYC, Classics, Sailing Week and Easter):
+                </dt>
+                <dd class="inline">$1200 per night</dd>
+              </div>
+            </dl>
+            <p class="mt-6 text-md leading-8 text-gray-600">
+              Prices do not include 17% ABST Tax Charge. As of October 1st,
+              2021, the Antigua & Barbuda government has imposed a $5 US per
+              person per night tourism guest levy on all short-term bookings.
+              Price may be adjusted based on high season and holiday events
+              taking place in Antigua.
+            </p>
+            <p class="mt-6 text-md leading-8 text-gray-600">
+              CANCELLATION POLICY: 100% Refund of payment will be issued if the
+              booking is cancelled 60 days prior to scheduled arrival. 50%
+              Refund of payment will be issued if the booking is cancelled 30
+              days prior to scheduled arrival. Inside of 30 days we do not
+              refund reservations but will reschedule the booking at no
+              additional charge, if the cancellation is made 14 days prior to
+              arrival, and we are able to fill your reservation with another
+              booking.
+            </p>
           </div>
         </div>
-        <div>
-          <label
-            for="last-name"
-            class="block text-sm font-semibold leading-6 text-gray-900"
-            >Last name</label
-          >
-          <div class="mt-2.5">
-            <input
-              type="text"
-              name="last-name"
-              id="last-name"
-              autocomplete="family-name"
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-            />
+
+        <!-- Form section -->
+        <div class="px-6 lg:px-8" data-aos="fade">
+          <div class="mx-auto max-w-2xl">
+            <h2
+              class="text-2xl font-bold font-serif tracking-tight text-gray-900 sm:text-4xl"
+            >
+              Contact Us
+            </h2>
+            <p class="mt-6 text-lg leading-8 text-gray-600">
+              Use this form to ask any questions or find out Moonshine's
+              availabiltiy, please rememember to include the dates you're
+              interested in.
+            </p>
           </div>
-        </div>
-        <div class="sm:col-span-2">
-          <label
-            for="email"
-            class="block text-sm font-semibold leading-6 text-gray-900"
-            >Email</label
-          >
-          <div class="mt-2.5">
-            <input
-              type="email"
-              name="email"
-              id="email"
-              autocomplete="email"
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-            />
-          </div>
-        </div>
-        <div class="sm:col-span-2">
-          <label
-            for="phone-number"
-            class="block text-sm font-semibold leading-6 text-gray-900"
-            >Phone number</label
-          >
-          <div class="relative mt-2.5">
-            <div class="absolute inset-y-0 left-0 flex items-center">
-              <label for="country" class="sr-only">Country</label>
-              <select
-                id="country"
-                name="country"
-                class="h-full rounded-md border-0 bg-transparent bg-none py-0 pl-4 pr-9 text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm"
-              >
-                <option>US</option>
-                <option>UK</option>
-              </select>
-              <svg
-                class="pointer-events-none absolute right-3 top-0 h-full w-5 text-gray-400"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-                aria-hidden="true"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
-                  clip-rule="evenodd"></path>
-              </svg>
+          <form action="#" method="POST" class="mx-auto mt-8 max-w-xl sm:mt-12">
+            <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+              <div>
+                <label
+                  for="first-name"
+                  class="block text-sm font-semibold leading-6 text-gray-900"
+                  >First name</label
+                >
+                <div class="mt-2.5">
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autocomplete="given-name"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div>
+                <label
+                  for="last-name"
+                  class="block text-sm font-semibold leading-6 text-gray-900"
+                  >Last name</label
+                >
+                <div class="mt-2.5">
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    autocomplete="family-name"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <label
+                  for="email"
+                  class="block text-sm font-semibold leading-6 text-gray-900"
+                  >Email</label
+                >
+                <div class="mt-2.5">
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    autocomplete="email"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <label
+                  for="phone-number"
+                  class="block text-sm font-semibold leading-6 text-gray-900"
+                  >Phone number</label
+                >
+                <div class="relative mt-2.5">
+                  <input
+                    type="tel"
+                    name="phone-number"
+                    id="phone-number"
+                    autocomplete="tel"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  />
+                </div>
+              </div>
+              <div class="sm:col-span-2">
+                <label
+                  for="message"
+                  class="block text-sm font-semibold leading-6 text-gray-900"
+                  >Message</label
+                >
+                <div class="mt-2.5">
+                  <textarea
+                    name="message"
+                    id="message"
+                    rows="4"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                  ></textarea>
+                </div>
+              </div>
             </div>
-            <input
-              type="tel"
-              name="phone-number"
-              id="phone-number"
-              autocomplete="tel"
-              class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-            />
-          </div>
-        </div>
-        <div class="sm:col-span-2">
-          <label
-            for="message"
-            class="block text-sm font-semibold leading-6 text-gray-900"
-            >Message</label
-          >
-          <div class="mt-2.5">
-            <textarea
-              name="message"
-              id="message"
-              rows="4"
-              class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-            ></textarea>
-          </div>
+            <div class="mt-10">
+              <button
+                type="submit"
+                class="block w-full rounded-md bg-emerald-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                >Let's talk</button
+              >
+            </div>
+          </form>
         </div>
       </div>
-      <div class="mt-10">
-        <button
-          type="submit"
-          class="block w-full rounded-md bg-emerald-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
-          >Let's talk</button
-        >
-      </div>
-    </form>
+    </div>
   </div>
 </BaseLayout>
