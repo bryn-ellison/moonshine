@@ -9,7 +9,7 @@ const sortedImages = images.sort(() => Math.random() - 0.5);
 <div
   class="relative isolate px-6 py-10 lg:px-8 bg-gradient-to-b from-neutral-200 to-white"
 >
-  <div class="mx-auto max-w-6xl container my-8 sm:columns-2 md:columns-3">
+  <div class="mx-auto max-w-6xl container my-8 columns-2 md:columns-3">
     {
       sortedImages.map((image) => (
         <a href={image.src}>

@@ -26,6 +26,21 @@ import Footer from "../components/Footer.astro";
       import { aosInit } from "../js/aos.js";
       aosInit();
       document.addEventListener("astro:after-swap", aosInit);
+
+      document.addEventListener("astro:before-swap", () => {
+        sessionStorage.setItem("scrollPosition", window.scrollY.toString());
+      });
+
+      document.addEventListener("astro:after-swap", () => {
+        const scrollPosition = sessionStorage.getItem("scrollPosition");
+        if (scrollPosition) {
+          window.scrollTo({
+            top: parseInt(scrollPosition, 10),
+            behavior: "instant",
+          });
+          sessionStorage.removeItem("scrollPosition");
+        }
+      });
     </script>
   </body>
 </html>
