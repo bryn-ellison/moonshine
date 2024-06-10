@@ -1,4 +1,6 @@
 import defaultTheme from "tailwindcss/defaultTheme";
+import ui from "franken-ui";
+import preset from "franken-ui/shadcn-ui/preset";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -17,5 +19,40 @@ export default {
       },
     },
   },
-  plugins: [require("@tailwindcss/forms")],
+  presets: [preset],
+  safelist: [
+    {
+      pattern: /^uk-/,
+    },
+  ],
+  plugins: [
+    require("@tailwindcss/forms"),
+
+    ui({
+      components: {
+        lightbox: { hooks: {} },
+        slidenav: {
+          hooks: {},
+        },
+        grid: {
+          hooks: {},
+          media: true,
+        },
+        icon: {
+          hooks: {},
+        },
+        position: {
+          hooks: {},
+          media: true,
+        },
+        transition: {
+          hooks: {},
+        },
+        text: {
+          hooks: {},
+          media: true,
+        },
+      },
+    }),
+  ],
 };

@@ -9,21 +9,30 @@ const sortedImages = images.sort(() => Math.random() - 0.5);
 <div
   class="relative isolate px-6 py-10 lg:px-8 bg-gradient-to-b from-neutral-200 to-white"
 >
-  <div class="mx-auto max-w-6xl container my-8 columns-2 md:columns-3">
+  <div
+    uk-lightbox
+    class="mx-auto max-w-6xl container my-8 columns-2 md:columns-3"
+  >
     {
       sortedImages.map((image) => (
-        <a href={image.src}>
-          <Image
-            data-aos="fade"
-            src={image}
-            alt={`Image of Moonshine property, Antigua`}
-            quality={50}
-            width={400}
-            class="rounded w-full mb-4 hover:border-gray-300 shadow-xl transition-all duration-300 ease-in-out hover:brightness-110"
-            loading="lazy"
-          />
-        </a>
+        <div>
+          <a href={image.src}>
+            <Image
+              data-aos="fade"
+              src={image}
+              alt={`Image of Moonshine property, Antigua`}
+              quality={50}
+              width={500}
+              class="rounded w-full mb-4 hover:border-gray-300 shadow-xl transition-all duration-300 ease-in-out hover:brightness-110"
+              loading="lazy"
+            />
+          </a>
+        </div>
       ))
     }
   </div>
 </div>
+<script
+  src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit.min.js"
+  src="https://cdn.jsdelivr.net/npm/uikit@3.20.8/dist/js/uikit-icons.min.js"
+></script>
