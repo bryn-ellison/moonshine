@@ -1,11 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import ContentPageHeader from "../components/ContentPageHeader.astro";
+import { Image } from "astro:assets";
+import poolImage from "../images/poolarea7.jpg";
 
 const pageTitle = "Booking your stay";
 const pageDescription =
   "Already fallen in love? Get in touch and we'll make your dreams a reality.";
-const pageImage = "bg-hero-image";
+const pageImage = "bg-hero-image-book";
 ---
 
 <BaseLayout pageTitle={pageTitle}>
@@ -20,8 +22,8 @@ const pageImage = "bg-hero-image";
       <div
         class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
       >
-        <div class="p-6">
-          <div class="lg:max-w-lg">
+        <div>
+          <div class="lg:max-w-lg p-6">
             <h2
               class="text-slate-900 text-2xl font-bold font-serif tracking-tight sm:text-4xl"
             >
@@ -44,7 +46,7 @@ const pageImage = "bg-hero-image";
                     width="1.5rem"
                     height="1.5rem"
                     viewBox="0 0 512 512"
-                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    class="absolute left-1 top-1 h-5 w-5 text-cyan-500"
                     ><path
                       fill="currentColor"
                       d="M432 230.7a79.4 79.4 0 0 0-32-6.7H112a79.5 79.5 0 0 0-32 6.69A80.09 80.09 0 0 0 32 304v112a16 16 0 0 0 32 0v-8a8.1 8.1 0 0 1 8-8h368a8.1 8.1 0 0 1 8 8v8a16 16 0 0 0 32 0V304a80.09 80.09 0 0 0-48-73.3M376 80H136a56 56 0 0 0-56 56v72a4 4 0 0 0 5.11 3.84A95.5 95.5 0 0 1 112 208h4.23a4 4 0 0 0 4-3.55A32 32 0 0 1 152 176h56a32 32 0 0 1 31.8 28.45a4 4 0 0 0 4 3.55h24.46a4 4 0 0 0 4-3.55A32 32 0 0 1 304 176h56a32 32 0 0 1 31.8 28.45a4 4 0 0 0 4 3.55h4.2a95.5 95.5 0 0 1 26.89 3.85A4 4 0 0 0 432 208v-72a56 56 0 0 0-56-56"
@@ -61,7 +63,7 @@ const pageImage = "bg-hero-image";
                     width="1.5rem"
                     height="1.5rem"
                     viewBox="0 0 16 16"
-                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    class="absolute left-1 top-1 h-5 w-5 text-cyan-500"
                     ><path
                       fill="currentColor"
                       d="M6.723 1.054a.5.5 0 0 1 .265.335C7.006 1.468 7.5 3.582 7.5 5c0 .95-.442 1.797-1.13 2.346c-.25.2-.37.418-.37.6v.486q0 .035.004.066c.034.248.157 1.169.272 2.124c.113.937.224 1.959.224 2.378a2 2 0 1 1-4 0c0-.42.111-1.44.224-2.378c.115-.955.238-1.876.272-2.124L3 8.432v-.486c0-.182-.12-.4-.37-.6A3 3 0 0 1 1.5 5c0-1.413.49-3.516.512-3.61A.505.505 0 0 1 2.505 1c.28 0 .507.227.507.507v2.998A.495.495 0 1 0 4 4.5v-3a.5.5 0 0 1 1 0v3.026a.495.495 0 0 0 .99-.021v-3c0-.279.226-.505.506-.505c.022 0 .12 0 .227.054M9 5.5A4.5 4.5 0 0 1 13.5 1a.5.5 0 0 1 .5.5v5.973l.019.177a262 262 0 0 1 .229 2.24c.123 1.256.252 2.664.252 3.11a2 2 0 1 1-4 0c0-.446.129-1.854.252-3.11c.063-.637.126-1.247.173-1.699l.02-.191H10a1 1 0 0 1-1-1z"
@@ -78,7 +80,7 @@ const pageImage = "bg-hero-image";
                     width="1.5rem"
                     height="1.5rem"
                     viewBox="0 0 14 14"
-                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    class="absolute left-1 top-1 h-5 w-5 text-cyan-500"
                     ><path
                       fill="currentColor"
                       fill-rule="evenodd"
@@ -91,24 +93,12 @@ const pageImage = "bg-hero-image";
                 <dd>$1200 per night</dd>
               </div>
             </dl>
-            <p class="mt-6 text-md leading-8 text-gray-600">
-              Prices do not include 17% ABST Tax Charge. As of October 1st,
-              2021, the Antigua & Barbuda government has imposed a $5 US per
-              person per night tourism guest levy on all short-term bookings.
-              Price may be adjusted based on high season and holiday events
-              taking place in Antigua.
-            </p>
-            <p class="mt-6 text-md leading-8 text-gray-600">
-              CANCELLATION POLICY: 100% Refund of payment will be issued if the
-              booking is cancelled 60 days prior to scheduled arrival. 50%
-              Refund of payment will be issued if the booking is cancelled 30
-              days prior to scheduled arrival. Inside of 30 days we do not
-              refund reservations but will reschedule the booking at no
-              additional charge, if the cancellation is made 14 days prior to
-              arrival, and we are able to fill your reservation with another
-              booking.
-            </p>
           </div>
+          <Image
+            src={poolImage}
+            alt="View of pool area"
+            class="w-full mt-8 sm:p-6"
+          />
         </div>
 
         <!-- Form section -->
@@ -133,7 +123,7 @@ const pageImage = "bg-hero-image";
               <div>
                 <label
                   for="first-name"
-                  class="block text-sm font-semibold leading-6 text-gray-900"
+                  class="block text-md font-semibold leading-6 text-gray-900"
                   >First name</label
                 >
                 <div class="mt-2.5">
@@ -142,14 +132,14 @@ const pageImage = "bg-hero-image";
                     name="first-name"
                     id="first-name"
                     autocomplete="given-name"
-                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
               <div>
                 <label
                   for="last-name"
-                  class="block text-sm font-semibold leading-6 text-gray-900"
+                  class="block text-md font-semibold leading-6 text-gray-900"
                   >Last name</label
                 >
                 <div class="mt-2.5">
@@ -158,14 +148,14 @@ const pageImage = "bg-hero-image";
                     name="last-name"
                     id="last-name"
                     autocomplete="family-name"
-                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label
                   for="email"
-                  class="block text-sm font-semibold leading-6 text-gray-900"
+                  class="block text-md font-semibold leading-6 text-gray-900"
                   >Email</label
                 >
                 <div class="mt-2.5">
@@ -174,14 +164,14 @@ const pageImage = "bg-hero-image";
                     name="email"
                     id="email"
                     autocomplete="email"
-                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label
                   for="phone-number"
-                  class="block text-sm font-semibold leading-6 text-gray-900"
+                  class="block text-md font-semibold leading-6 text-gray-900"
                   >Phone number</label
                 >
                 <div class="relative mt-2.5">
@@ -190,14 +180,14 @@ const pageImage = "bg-hero-image";
                     name="phone-number"
                     id="phone-number"
                     autocomplete="tel"
-                    class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 pl-20 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   />
                 </div>
               </div>
               <div class="sm:col-span-2">
                 <label
                   for="message"
-                  class="block text-sm font-semibold leading-6 text-gray-900"
+                  class="block text-md font-semibold leading-6 text-gray-900"
                   >Message</label
                 >
                 <div class="mt-2.5">
@@ -205,7 +195,7 @@ const pageImage = "bg-hero-image";
                     name="message"
                     id="message"
                     rows="4"
-                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+                    class="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-cyan-600 sm:text-sm sm:leading-6"
                   ></textarea>
                 </div>
               </div>
@@ -213,11 +203,40 @@ const pageImage = "bg-hero-image";
             <div class="mt-10">
               <button
                 type="submit"
-                class="block w-full rounded-md bg-emerald-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                class="block w-full rounded-md bg-cyan-500 px-3.5 py-2.5 text-center text-md font-semibold text-white shadow-sm hover:bg-cyan-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                 >Let's talk</button
               >
             </div>
           </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="overflow-hidden" data-aos="fade">
+    <div class="mx-auto max-w-6xl">
+      <div
+        class="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2"
+      >
+        <div class="p-6">
+          <p class="mt-6 text-md leading-8 text-gray-600">
+            Prices do not include 17% ABST Tax Charge. As of October 1st, 2021,
+            the Antigua & Barbuda government has imposed a $5 US per person per
+            night tourism guest levy on all short-term bookings. Price may be
+            adjusted based on high season and holiday events taking place in
+            Antigua.
+          </p>
+        </div>
+        <div class="p-6">
+          <p class="mt-6 text-md leading-8 text-gray-600">
+            CANCELLATION POLICY: 100% Refund of payment will be issued if the
+            booking is cancelled 60 days prior to scheduled arrival. 50% Refund
+            of payment will be issued if the booking is cancelled 30 days prior
+            to scheduled arrival. Inside of 30 days we do not refund
+            reservations but will reschedule the booking at no additional
+            charge, if the cancellation is made 14 days prior to arrival, and we
+            are able to fill your reservation with another booking.
+          </p>
         </div>
       </div>
     </div>

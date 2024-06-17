@@ -4,7 +4,7 @@ import ContentPageHeader from "../components/ContentPageHeader.astro";
 
 const pageTitle = "About Moonshine";
 const pageDescription = "Find out what the property has to offer";
-const pageImage = "bg-hero-image";
+const pageImage = "bg-hero-image-about";
 
 import { Image } from "astro:assets";
 import poolArea from "../images/poolarea.jpg";
@@ -24,14 +24,11 @@ import kitchen from "../images/kitchen.jpg";
       >
         <div class="px-6 lg:pr-8">
           <div class="lg:max-w-lg">
-            <h2 class="text-base font-semibold leading-7 text-emerald-600">
-              Don't worry, be happy
-            </h2>
-            <p
+            <h2
               class="mt-2 text-slate-900 text-2xl font-bold font-serif tracking-tight sm:text-4xl"
             >
               All you need and more
-            </p>
+            </h2>
             <p class="mt-6 text-lg leading-8 text-gray-600">
               Moonshine was completed in 2024 and is ready to make sure you have
               holiday of your dreams. Sitting in Willoughby Bay overlooking its
@@ -48,7 +45,7 @@ import kitchen from "../images/kitchen.jpg";
                     width="1.5rem"
                     height="1.5rem"
                     viewBox="0 0 512 512"
-                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    class="absolute left-1 top-1 h-5 w-5 text-cyan-500"
                     ><path
                       fill="currentColor"
                       d="M432 230.7a79.4 79.4 0 0 0-32-6.7H112a79.5 79.5 0 0 0-32 6.69A80.09 80.09 0 0 0 32 304v112a16 16 0 0 0 32 0v-8a8.1 8.1 0 0 1 8-8h368a8.1 8.1 0 0 1 8 8v8a16 16 0 0 0 32 0V304a80.09 80.09 0 0 0-48-73.3M376 80H136a56 56 0 0 0-56 56v72a4 4 0 0 0 5.11 3.84A95.5 95.5 0 0 1 112 208h4.23a4 4 0 0 0 4-3.55A32 32 0 0 1 152 176h56a32 32 0 0 1 31.8 28.45a4 4 0 0 0 4 3.55h24.46a4 4 0 0 0 4-3.55A32 32 0 0 1 304 176h56a32 32 0 0 1 31.8 28.45a4 4 0 0 0 4 3.55h4.2a95.5 95.5 0 0 1 26.89 3.85A4 4 0 0 0 432 208v-72a56 56 0 0 0-56-56"
@@ -68,7 +65,7 @@ import kitchen from "../images/kitchen.jpg";
                     width="1.5rem"
                     height="1.5rem"
                     viewBox="0 0 16 16"
-                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    class="absolute left-1 top-1 h-5 w-5 text-cyan-500"
                     ><path
                       fill="currentColor"
                       d="M6.723 1.054a.5.5 0 0 1 .265.335C7.006 1.468 7.5 3.582 7.5 5c0 .95-.442 1.797-1.13 2.346c-.25.2-.37.418-.37.6v.486q0 .035.004.066c.034.248.157 1.169.272 2.124c.113.937.224 1.959.224 2.378a2 2 0 1 1-4 0c0-.42.111-1.44.224-2.378c.115-.955.238-1.876.272-2.124L3 8.432v-.486c0-.182-.12-.4-.37-.6A3 3 0 0 1 1.5 5c0-1.413.49-3.516.512-3.61A.505.505 0 0 1 2.505 1c.28 0 .507.227.507.507v2.998A.495.495 0 1 0 4 4.5v-3a.5.5 0 0 1 1 0v3.026a.495.495 0 0 0 .99-.021v-3c0-.279.226-.505.506-.505c.022 0 .12 0 .227.054M9 5.5A4.5 4.5 0 0 1 13.5 1a.5.5 0 0 1 .5.5v5.973l.019.177a262 262 0 0 1 .229 2.24c.123 1.256.252 2.664.252 3.11a2 2 0 1 1-4 0c0-.446.129-1.854.252-3.11c.063-.637.126-1.247.173-1.699l.02-.191H10a1 1 0 0 1-1-1z"
@@ -89,7 +86,7 @@ import kitchen from "../images/kitchen.jpg";
                     width="1.5rem"
                     height="1.5rem"
                     viewBox="0 0 14 14"
-                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    class="absolute left-1 top-1 h-5 w-5 text-cyan-500"
                     ><path
                       fill="currentColor"
                       fill-rule="evenodd"
@@ -109,7 +106,7 @@ import kitchen from "../images/kitchen.jpg";
         <Image
           src={poolArea}
           alt="Love sign by poolside"
-          class="w-full md:w-[48rem] md:mt-16 max-w-none md:rounded-xl shadow-xl md:-ml-4 lg:-ml-0"
+          class="w-full md:w-[48rem] md:mt-16 max-w-none shadow-xl md:-ml-4 lg:-ml-0"
         />
       </div>
     </div>
@@ -266,7 +263,7 @@ import kitchen from "../images/kitchen.jpg";
                     width="1.5rem"
                     height="1.5rem"
                     viewBox="0 0 14 14"
-                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    class="absolute left-1 top-1 h-5 w-5 text-cyan-500"
                     ><path
                       fill="currentColor"
                       fill-rule="evenodd"
@@ -287,7 +284,7 @@ import kitchen from "../images/kitchen.jpg";
                     width="1.5rem"
                     height="1.5rem"
                     viewBox="0 0 24 24"
-                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    class="absolute left-1 top-1 h-5 w-5 text-cyan-500"
                     ><path
                       fill="currentColor"
                       d="M14.83 11.17a4.01 4.01 0 0 1 0 5.66a4.01 4.01 0 0 1-5.66 0zM6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2m1 2a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m3 0a1 1 0 0 0-1 1a1 1 0 0 0 1 1a1 1 0 0 0 1-1a1 1 0 0 0-1-1m2 4a6 6 0 0 0-6 6a6 6 0 0 0 6 6a6 6 0 0 0 6-6a6 6 0 0 0-6-6"
@@ -307,7 +304,7 @@ import kitchen from "../images/kitchen.jpg";
                     width="1.5rem"
                     height="1.5rem"
                     viewBox="0 0 24 24"
-                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    class="absolute left-1 top-1 h-5 w-5 text-cyan-500"
                     ><path
                       fill="currentColor"
                       d="m5 11l1.5-4.5h11L19 11m-1.5 5a1.5 1.5 0 0 1-1.5-1.5a1.5 1.5 0 0 1 1.5-1.5a1.5 1.5 0 0 1 1.5 1.5a1.5 1.5 0 0 1-1.5 1.5m-11 0A1.5 1.5 0 0 1 5 14.5A1.5 1.5 0 0 1 6.5 13A1.5 1.5 0 0 1 8 14.5A1.5 1.5 0 0 1 6.5 16M18.92 6c-.2-.58-.76-1-1.42-1h-11c-.66 0-1.22.42-1.42 1L3 12v8a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-1h12v1a1 1 0 0 0 1 1h1a1 1 0 0 0 1-1v-8z"
@@ -328,7 +325,7 @@ import kitchen from "../images/kitchen.jpg";
                     width="1.5rem"
                     height="1.5rem"
                     viewBox="0 0 16 16"
-                    class="absolute left-1 top-1 h-5 w-5 text-emerald-600"
+                    class="absolute left-1 top-1 h-5 w-5 text-cyan-500"
                     ><path
                       fill="currentColor"
                       fill-rule="evenodd"
@@ -349,7 +346,7 @@ import kitchen from "../images/kitchen.jpg";
         <Image
           src={kitchen}
           alt="Moonshine upstairs kitchen view"
-          class="w-full md:w-[48rem] md:mt-24 max-w-none md:rounded-xl shadow-xl md:-ml-4 lg:-ml-0"
+          class="w-full md:w-[48rem] md:mt-24 max-w-none shadow-xl md:-ml-4 lg:-ml-0"
         />
       </div>
     </div>

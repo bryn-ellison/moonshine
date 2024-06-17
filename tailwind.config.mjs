@@ -12,10 +12,12 @@ export default {
     },
     extend: {
       backgroundImage: {
-        "hero-image": "url('/src/images/poolarea6.jpg')",
-        "homepage-image": "url('/src/images/beach.jpg')",
+        "hero-image-about": "url('/src/images/media/headerOne.jpg')",
+        "hero-image-gallery": "url('/src/images/media/headerTwo.jpg')",
+        "hero-image-stay": "url('/src/images/media/headerThree.jpg')",
+        "hero-image-book": "url('/src/images/media/headerFour.jpg')",
+        "homepage-image": "url('/src/images/media/homepageHeader.jpg')",
         "mobile-menu-bg": "url('/src/images/media/mobileMenuBg.jpg')",
-        "homepage-video": "url('https://youtu.be/94YPSdHHkDc')",
       },
     },
   },
@@ -51,6 +53,9 @@ export default {
         text: {
           hooks: {},
           media: true,
+        },
+        close: {
+          hooks: {},
         },
       },
     }),
