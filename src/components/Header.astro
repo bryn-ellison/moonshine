@@ -1,5 +1,11 @@
 ---
+import { getImage } from "astro:assets";
+import myBackground from "../images/media/mobileMenuBg.jpg";
 
+const optimizedBackground = await getImage({
+  src: myBackground,
+  format: "webp",
+});
 ---
 
 <header class="fixed inset-x-0 top-0 z-50">
@@ -58,7 +64,11 @@
     aria-modal="true"
   >
     <!-- Background backdrop, show/hide based on slide-over state. -->
-    <div class="fixed inset-0 z-50 bg-mobile-menu-bg bg-center bg-cover"></div>
+    <div
+      style={`background-image: url(${optimizedBackground.src});`}
+      class="fixed inset-0 z-50 bg-center bg-cover"
+    >
+    </div>
     <div
       class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-b from-white to-transparent px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
     >
